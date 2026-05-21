@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>formyprettycutiebabi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- 🌸 NEW ANIMATED BACKGROUND LAYER -->
+    <div class="animated-background"></div>
+
+    <!-- 🌙 GLOWING MOON -->
+    <div class="moon"></div>
+
+    <!-- 💫 ROTATING GRADIENT ORBS -->
+    <div class="orb-container">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+    </div>
+
+    <!-- 💖 GRADIENT WAVES -->
+    <div class="wave-container">
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <!-- 💝 FLOATING BUBBLES -->
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+
+    <!-- ✨ TWINKLING STARS -->
+    <div class="star">⭐</div>
+    <div class="star">⭐</div>
+    <div class="star">⭐</div>
+    <div class="star">⭐</div>
+    <div class="star">⭐</div>
+    <div class="star">⭐</div>
+    <div class="star">⭐</div>
+    <div class="star">⭐</div>
+
+    <!-- 🦋 FLOATING BUTTERFLIES -->
+    <div class="butterfly">🦋</div>
+    <div class="butterfly">🦋</div>
+    <div class="butterfly">🦋</div>
+
+    <!-- 💫 SHOOTING STARS -->
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+
+    <!-- 💕 PULSE RINGS -->
+    <div class="pulse-ring"></div>
+    <div class="pulse-ring"></div>
+    <div class="pulse-ring"></div>
+
+    <!-- 🌈 RAINBOW LIGHT BEAMS -->
+    <div class="light-beam"></div>
+    <div class="light-beam"></div>
+    <div class="light-beam"></div>
+
+    <!-- 💖 HEART BURST PARTICLES -->
+    <div class="heart-particle">💕</div>
+    <div class="heart-particle">💕</div>
+    <div class="heart-particle">💕</div>
+    <div class="heart-particle">💕</div>
+    <div class="heart-particle">💕</div>
+    <div class="heart-particle">💕</div>
+
+    <!-- Falling Hearts Background -->
+    <div class="falling-hearts"></div>
+
+    <!-- PRE-LOGIN SURPRISE OVERLAY -->
+    <div id="preLoginOverlay" class="prelogin-overlay">
+      <div class="prelogin-box">
+        <img src="img/cutecat.gif" alt="Cute Cat" class="cat-gif">
+        <h2>HELLO MY BABYYYY!!</h2>
+        <p>I have a little surprise for you🤗 <br>
+           Are you ready na po?😁</p>
+        <div class="prelogin-buttons">
+          <button id="preYes" type="button" class="btn">YES</button>
+          <button id="preNo" type="button" class="btn">NO</button>
+        </div>
+        <p id="pleadText" class="plead-text"></p>
+      </div>
+    </div>
+
+    <!-- CONFIRMATION POPUP -->
+    <div id="confirmOverlay" class="confirm-overlay">
+      <div class="confirm-box">
+        <img src="img/sadcat.gif" alt="Cute Cat" class="cat-gif">
+        <h2>Are you sure you're not ready? </h2>
+        I swear you will like it✋🥺
+        <div class="confirm-buttons">
+          <button id="confirmYes" type="button" class="btn">I SAID NO</button>
+          <button id="confirmNo" type="button" class="btn moving-btn">OKAY FINE</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PASSWORD LOGIN OVERLAY -->
+    <div id="loginOverlay" class="login-overlay">
+      <div class="login-box">
+        <img src="img/happycat.gif" alt="Cute Cat" class="cat-gif">
+        <h2>Enter the password first loveyy!!</h2>
+        <input type="password" id="pinInput" placeholder="Enter your password">
+        <p class="password-hint">(Hint: Combination of our name)😌</p>
+        <button id="pinSubmit" type="button" class="btn">Unlock</button>
+        <p id="pinError" class="error-msg"></p>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT - NEW REARRANGED LAYOUT -->
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo">☆*: .｡. o(≧▽≦)o .｡.:*☆ To My <span id="Shanice">Greatest Love</span> ☆*: .｡. o(≧▽≦)o .｡.:*☆</h1>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- SECTION 1: HERO MESSAGE + MEMORY ALBUM SIDE BY SIDE -->
+      <section class="hero-section">
+        <div class="hero-content">
+          <div class="love-message">
+            <h1 class="message-title">My Dearest Babii😘</h1>
+            <p class="message-text">
+              I made this little space on the internet just for you po and I hope you like it mahal ko.
+              I wanted something that could last, something that could hold the words I can't always say 
+              out loud. I built it hoping that every time you open it, you'll remember how loved you are, 
+              how grateful I am to have you, and how much you mean to me.
+            </p>
+            <button id="readLetterBtn" class="btn hero-btn">Read a Letter 💌</button>
+          </div>
+          
+          <!-- MEMORY ALBUM CARD -->
+          <div class="memory-album-card" id="memoryFolderCard">
+            <div class="album-icon">
+              <span class="album-emoji">📸</span>
+            </div>
+            <h3>Our Memory Album</h3>
+            <p class="album-hint">Click to see our precious moments together 💕</p>
+            <button class="btn album-btn open-folder-btn">Open Album</button>
+          </div>
+        </div>
+      </section>
+
+           <!-- SECTION 2: 35 REASONS FOLDER CARD - FIXED VERSION -->
+      <section class="reasons-folder-section">
+        <div class="reasons-folder-card" id="reasonsFolderCard">
+          <div class="folder-icon-large">
+            <span class="folder-emoji-large">💌</span>
+          </div>
+          <h2 class="reasons-title">35 Reasons Why I Love You</h2>
+          <p class="reasons-subtitle">Click the button to discover all the reasons 💚💛</p>
+          <button class="btn reasons-btn" onclick="document.querySelector('.letter1-overlay').classList.add('active')">Open Messages</button>
+        </div>
+      </section>
+
+      <!-- SECTION 3: CUTE STICKERS / GIF GALLERY -->
+      <section class="stickers-section">
+        <h3 class="section-title">Veryy Cutesyyy Babiii 😸</h3>
+        <div class="stickers-grid">
+          <div class="sticker-item">
+            <img class="sticker" src="img/kiss.gif" alt="Kiss">
+            <span class="sticker-label">mwah! 💋</span>
+          </div>
+          <div class="sticker-item">
+            <img class="sticker" src="img/iloveyou.gif" alt="I Love You">
+            <span class="sticker-label">love you! 💕</span>
+          </div>
+          <div class="sticker-item">
+            <img class="sticker" src="img/hug.gif" alt="Hug">
+            <span class="sticker-label">sending hugs 🫂</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: MUSIC PLAYER -->
+<section class="music-section">
+  <h3 class="section-title">🎵 Songs for You 🎵</h3>
+  <div id="musicPlayerSection" class="music-player-section" style="display: none;">
+    <!-- 💖 Romantic Song Message Popup -->
+    <div id="songMessage" class="song-message"></div>
+    
+    <div class="music-player-wrapper">
+      <!-- LEFT SIDE: Album Art and Controls -->
+      <div class="music-player-left">
+        <div class="album-art-container">
+          <img src="img/albumcover-malumanay.jpg" alt="Album Cover" class="album-art" id="albumArt">
+          <div class="art-glow"></div>
+        </div>
+        
+        <div class="song-info">
+          <span id="songTitle" class="track-title">Malumanay</span>
+          <span id="songArtist" class="track-artist">Tatin DC</span>
+        </div>
+
+        <!-- Control buttons -->
+        <div class="player-controls">
+          <button class="control-btn prev-btn" id="prevBtn" title="Previous">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8.5 12l5.5-5v10z"/>
+            </svg>
+          </button>
+          <button class="play-btn" id="playPauseBtn" title="Play/Pause">
+            <span class="play-icon">▶️</span>
+            <span class="pause-icon">⏸️</span>
+          </button>
+          <button class="control-btn next-btn" id="nextBtn" title="Next">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M15.5 12l-5.5-5v10z"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+          <div class="progress-bg" onclick="seekAudio(event)">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <input type="range" class="progress-bar" id="progressBar" min="0" max="100" value="0" step="0.1">
+          <div class="time-display">
+            <span id="currentTime">0:00</span>
+            <span>/</span>
+            <span id="totalTime">0:00</span>
+          </div>
+        </div>
+
+        <!-- Volume Controls -->
+        <div class="player-volume">
+          <button class="volume-btn" id="volumeBtn" title="Volume">
+            <svg class="volume-high" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
+            </svg>
+            <svg class="volume-low" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+              <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
+            </svg>
+            <svg class="volume-mute" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+              <path d="M12 4l-1.41 1.41L16.17 11H5v2h11.17l-5.58 5.59L12 20l7-7z"/>
+            </svg>
+          </button>
+          <input type="range" class="volume-slider" id="volumeSlider" min="0" max="1" step="0.01" value="0.7">
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE: Playlist -->
+      <div class="music-player-right">
+        <div class="playlist-header">
+          <h5>Your Playlist</h5>
+        </div>
+        <div class="playlist" id="playlist"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: DIGITAL LOVE NOTES - LANDSCAPE LAYOUT -->
+<section class="love-notes-section">
+  <h3 class="section-title">💌 Digital Love Notes 💌</h3>
+  
+  <div class="notes-container">
+    <div class="notes-main-content">
+      
+      <!-- Stats Row - Replaces Streak -->
+      <div class="stats-row">
+        <div class="stat-bubble">
+          <span class="stat-icon">📖</span>
+          <div class="stat-info">
+            <span class="stat-number" id="totalNotesRead">0</span>
+            <span class="stat-label">Notes Read</span>
+          </div>
+        </div>
+        
+        <div class="stat-bubble">
+          <span class="stat-icon">💖</span>
+          <div class="stat-info">
+            <span class="stat-number" id="favoritesCount">0</span>
+            <span class="stat-label">Favorites</span>
+          </div>
+        </div>
+        
+        <div class="stat-bubble">
+          <span class="stat-icon">📅</span>
+          <div class="stat-info">
+            <span class="stat-number" id="daysActive">0</span>
+            <span class="stat-label">Days Active</span>
+          </div>
+        </div>
+        
+        <!-- Categories moved here -->
+        <div class="categories-row">
+          <button class="category-btn active" data-category="all">All</button>
+          <button class="category-btn" data-category="sweet">Sweet</button>
+          <button class="category-btn" data-category="funny">Funny</button>
+          <button class="category-btn" data-category="deep">Deep</button>
+          <button class="category-btn" data-category="daily">Daily</button>
+        </div>
+      </div>
+      
+      <!-- Note Card - Wide Landscape -->
+      <div class="note-card" id="loveNoteCard">
+        <div class="note-content">
+          <div class="note-icon">💕</div>
+          <div class="note-text-wrapper">
+            <div class="note-text" id="loveNoteText">
+              "You're the most beautiful part of my everyday."
+            </div>
+            <div class="note-signature">— Your Baby</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Controls Row - Two Buttons -->
+      <div class="controls-row">
+        <button class="note-btn" id="newNoteBtn">
+          <span class="btn-icon">🎲</span>
+          New Note
+        </button>
+        
+        <button class="note-btn" id="saveNoteBtn">
+          <span class="btn-icon">💾</span>
+          Save to Favorites
+        </button>
+      </div>
+      
+      <!-- Favorites Row - Horizontal -->
+      <div class="favorites-row">
+        <div class="favorites-header">
+          <h4>💖 My Favorites</h4>
+          <span class="favorites-count-badge" id="favoritesCount">0</span>
+        </div>
+        
+        <div class="favorites-mini-grid" id="favoritesMiniGrid">
+          <!-- Favorite hearts will appear here -->
+          <div class="empty-favorites">Save notes to see them here 💕</div>
+        </div>
+        
+        <button class="view-all-btn" id="viewAllFavorites">View All</button>
+      </div>
+      
+    </div>
+  </div>
+  
+  <!-- Full Favorites Modal (Hidden by default) -->
+  <div class="favorites-modal" id="favoritesModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>💖 All Saved Notes</h3>
+        <button class="modal-close-btn" id="closeFavoritesModal">×</button>
+      </div>
+      <div class="favorites-full-grid" id="favoritesFullGrid">
+        <!-- All favorites will appear here -->
+      </div>
+    </div>
+  </div>
+</section>
+
+          <!-- ADD THIS RIGHT AFTER THE MUSIC PLAYER WRAPPER -->
+                    <div class="love-timer-container">
+            <div class="love-timer-text">
+              <span class="timer-label">We've been loving for:</span>
+              <div class="timer-display">
+                <span class="timer-unit">
+                  <span id="timerYears">00</span>
+                  <span class="unit-label">Years</span>
+                </span>
+                <span class="timer-separator">•</span>
+                <span class="timer-unit">
+                  <span id="timerMonths">00</span>
+                  <span class="unit-label">Months</span>
+                </span>
+                <span class="timer-separator">•</span>
+                <span class="timer-unit">
+                  <span id="timerDays">00</span>
+                  <span class="unit-label">Days</span>
+                </span>
+                <span class="timer-separator">•</span>
+                <span class="timer-unit">
+                  <span id="timerHours">00</span>
+                  <span class="unit-label">Hours</span>
+                </span>
+                <span class="timer-separator">•</span>
+                <span class="timer-unit">
+                  <span id="timerMinutes">00</span>
+                  <span class="unit-label">Mins</span>
+                </span>
+                <span class="timer-separator">•</span>
+                <span class="timer-unit">
+                  <span id="timerSeconds">00</span>
+                  <span class="unit-label">Secs</span>
+                </span>
+              </div>
+            </div>
+          </div>
+      </section>
+      </main>
+
+    <!-- LETTER 1 POPUP (35 FLIP CARDS) - HIDDEN UNTIL CLICKED -->
+    <div id="letter1-section">
+      <div class="letter1-overlay">
+        <div class="letter1-box">
+          <h2>(*￣3￣)╭ Reasons Why I Love You (*￣3￣)╭</h2>
+          <div class="letter1-notes">
+            <!-- 35 FLIP CARDS -->
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">you're very thoughtful😘</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">the way you comfort me🥹</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">you always notice the little things about me🤗</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">your smell😍</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">your way with words😌</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">your love for me🥰</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">your hugs, ahhhhh it feels like home🥹</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">how secure you me feel😊</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">the way you check up on me💗</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">you celebrate my small wins💚</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">you always inspire me😊</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">you know when something is wrong🥹</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">your love language😌</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">how you make everything better🫶</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">you're always there for me🥺</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">i love listening to you💚</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">you have the most beautiful soul💝</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">you make me so happy🥹</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">you make future plans with me💗</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">the way you accept me🥹</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">the way you make my heart skip a beat every time i see you💚</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">you're my favorite notification🥰</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">you always have that positive energy🫶</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">you always make me feel worthy🥺</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">our goodmorning and goodnight messages🫶</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">our connection💗</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">you're my bestfriend🥹</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">you study a lot😌</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">the way you love your family🫶</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">you're my safe place💝</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">you appreciates me💗</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">your reassurance😊</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">your "hello babi" every time you message me🥰</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">you're my dream come true💚</div>
+              </div>
+            </div>
+            <div class="letter1-card">
+              <div class="letter1-card-inner">
+                <div class="front">Click here💌</div>
+                <div class="back">Because IT'S YOU!</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- ROMANTIC FOOTER TEXT - Hidden until all cards flipped -->
+          <div class="letter1-footer">
+            "and countless more mahal kooo😘... "
+          </div>
+          
+          <button class="letter1-close">Close</button>
+        </div>
+      </div>
+    </div>
+
+        <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-quote">
+          "In case you ever foolishly forget, I am never not thinking of you."
+        </div>
+        <div class="footer-signature">
+          From ME your admirer since 2018 💚💛
+        </div>
+      </div>
+    </footer>
+
+    <!-- Letter Modal -->
+    <div id="letterModal" class="modal" aria-hidden="true">
+      <div class="modal-content letter-inner">
+        <button class="modal-close" aria-label="Close letter">×</button>
+        
+        <div class="letter-header">
+          <h2 id="letterTitle">To My Dearest Love</h2>
+        </div>
+        
+        <div class="letter-body">
+          <!-- Floating Hearts -->
+          <div class="floating-heart">💖</div>
+          <div class="floating-heart">💕</div>
+          <div class="floating-heart">💗</div>
+          <div class="floating-heart">💓</div>
+          <div class="floating-heart">💝</div>
+          <div class="floating-heart">💖</div>
+          <div class="floating-heart">💕</div>
+          <div class="floating-heart">💗</div>
+          <div class="floating-heart">💓</div>
+          <div class="floating-heart">💝</div>
+          <div class="floating-heart">💖</div>
+          <div class="floating-heart">💕</div>
+          <div class="floating-heart">💗</div>
+          <div class="floating-heart">💓</div>
+          <div class="floating-heart">💝</div>
+          <div class="floating-heart">💖</div>
+          <div class="floating-heart">💕</div>
+          <div class="floating-heart">💗</div>
+          <div class="floating-heart">💓</div>
+          <div class="floating-heart">💝</div>
+          
+          <div id="letterText" class="letter-text"></div>
+          <div class="letter-signature">Forever Yours 💕</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background Music Player -->
+    <audio id="bgMusic" preload="metadata"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
