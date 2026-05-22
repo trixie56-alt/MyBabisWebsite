@@ -178,17 +178,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (elements.letterTitle) elements.letterTitle.textContent = 'Hellooo My Loveyyyy!!';
     if (elements.letterText) {
       elements.letterText.innerHTML = 
-        `I hope this little message finds you smiling, because that's exactly what I'm doing right now just thinking about you. You've been on my mind constantly, and I couldn't let another moment pass without telling you what's been filling my heart.<br><br>
-
-From the very first time I saw you, I knew there was something special about you. The way you laugh, the way you care about the people around you, and the way you make even the simplest moments feel magical—it all drew me in. I used to admire you from afar, never thinking I'd have the chance to be this close to you, to know you the way I do now.<br><br>
-
-Every day with you feels like a gift I never knew I needed. You've become my favorite hello and my hardest goodbye. When I'm with you, everything just feels right. You calm my restless heart and make me believe in all the beautiful things I used to only read about in stories.<br><br>
-
-Thank you for accepting me, for giving me a chance, and for being exactly who you are. Thank you for the little moments we share, the inside jokes, the comfortable silences, and even the times when we're just being silly together. Those are the moments I treasure the most.<br><br>
-
-I hope you never forget how deeply you're loved and how much you mean to me. You're not just my partner you're my peace, my happiness, and my greatest blessing.<br><br>
-
-I love you more than words could ever express, mahal ko. 💚💛`;
+        `Hello babi hehe, just wanted to say thank you for staying and loving every version of me, you've seen me at my worst and still chose to stay, that's everything to me. Thank you for being my one call away when my world is falling apart and when everything feels heavy and loud, you are my safe place.I appreciate every little thing you do. Thank you for being patient with me, for handling me with so much care and for treating me the way I've always dreamed of. You're literally the sweetest and kindest woman I've ever met, I swear. You never make me feel less than, alone, or hard to love. Just so you know, I saw the happiest version of me when i was with you.<br>
+I'm not perfect. You know how much of a mess I am. I've had days when I'm not easy to be around. But you never made me feel like I was too much. You just stayed. You held on when you could've just let go. Thank you for not giving up on me. Thank you for making me feel worthy. I am overwhelmed with guilt that I can't reach the level of love you are giving to me. I don't know how to act, I don't know what to say, I don't know exactly what to do. I've never been good with words I don't know how to express my feelings in a way that you'll like. I get caught between wanting to say the right thing and not knowing how to put it into words. That's why sometimes I just stay quiet, because my words will just fail me.<br>
+I want to treat you the way you deserve. But I'm so indecisive. I want to act perfect in front of you. I want to be the best. But what really happens is the opposite, I always end up messing it up. As you can see, I lack as a person, as your girlfriend. And it means so much how you can still accept me wholeheartedly as I am. I'm really moved by that, babi. Just hang on a little longer to me. I know I have so much to learn from you. We're just starting this journey, and I truly believe I'll grow into someone better when I'm with you. And I really hope that when the time is right, and I have become the better version of myself that I've always wanted to be, you are still there with me. Holding my hand. Choosing me. Just like you always have.<br>
+I hope we surpass every challenge that we might face in the future. I hope we grow stronger. One more thing, I just want to thank you for letting me meet your family. You never had a second thought about letting me meet them. Thank you. That's why I love you so much, mwuaaaahhhh <3 whehehehehhe.<br>
+I hope you never forget how deeply you're loved and how much you mean to me. You're not just my partner you're my peace, my happiness, and my greatest blessing.<br>
+I love you more than words could ever express, mahal ko😘`;
     }
     setModalHidden(elements.letterModal, false);
   });
